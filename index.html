@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boran Gobel - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-RwYl9eTRPG0rDsJwYTA/ZZUecPOJN5x/g3rCEXIW/zcNZjU0j2Bl6SRY6P6piihfDZE2mt23jS9A5Kk9wFGaGw==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+    <!-- Header section -->
+    <header>
+        <div class="container">
+            <h1>Boran Gobel - Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="scrollToSection('about')">About</a></li>
+                    <li><a href="#" onclick="scrollToSection('skills')">Skills</a></li>
+                    <li><a href="#" onclick="scrollToSection('projects')">Projects</a></li>
+                    <li><a href="#" onclick="scrollToSection('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+
+        <!-- About Me section -->
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-photo">
+                <img src="photo.png" alt="Your Photo">
+            </div>
+            <div class="about-info">
+                <p>I am a computer science student deeply passionate about the transformative power of data. Through my portfolio, I showcase a collection of projects that demonstrate my proficiency in data analysis, from exploratory data exploration to predictive modeling and visualization. Each project reflects my commitment to leveraging data-driven insights to solve real-world problems and drive meaningful impact.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<br><br>
+       <!-- Skills section -->
+<section id="skills">
+    <div class="container">
+        <h2>SKILLS</h2>
+        <div class="skills-container">
+            <!-- Skill Box 1 -->
+            <div class="skill-box">
+                <p>Python (Pandas, Numpy, Matplotlib)</p>
+            </div>
+            <!-- Skill Box 2 -->
+            <div class="skill-box">
+                <p>SQL</p>
+            </div>
+            <!-- Skill Box 3 -->
+            <div class="skill-box">
+                <p>Tableau</p>
+            </div>
+            <!-- Skill Box 4 -->
+            <div class="skill-box">
+                <p>Data Analysis</p>
+            </div>
+            <!-- Skill Box 5 -->
+            <div class="skill-box">
+                <p>Excel</p>
+            </div>
+            <!-- Add more skill boxes as needed -->
+        </div>
+    </div>
+</section>
+<br><br>
+
+
+<!-- Projects section -->
+<section id="projects">
+    <div class="container">
+        <h2>MY PROJECTS</h2>
+        <div class="project-container">
+            <!-- Project Box 1 -->
+            <div class="project-box" onclick="openProjectDetails('tableau_pro.html')">
+                <img src="tableau.png" alt="Project 1">
+                <h3>Tableau Project - Data Visualization</h3>
+                <p>Used Tools : Tableau</p>
+            </div>
+            <!-- Project Box 2 -->
+            <div class="project-box" onclick="openProjectDetails('supply_chain_pro.html')">
+                <img src="SupplyChainAnalysis.png" alt="Project 2">
+                <h3>Supply Chain Analysis USA</h3>
+                <p>Used Tools : SQL, Python, Tableau</p>
+            </div>
+            <!-- Project Box 3 -->
+            <div class="project-box" onclick="openProjectDetails('sales_data_pro.html')">
+                <img src="Sales Data USA.png" alt="Project 3">
+                <h3>Sales-Data-Analysis</h3>
+                <p>Used Tools : Python(Pandas &Matplotlib), Tableau</p>
+            </div>
+            <!-- Add more project boxes as needed -->
+        </div>
+    </div>
+</section>
+
+<br><br>
+
+
+       <!-- Contact section -->
+       <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-links">
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <p><a href="https://github.com/borangobel">Github: borangobel</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <p><a href="https://www.linkedin.com/in/borangobel/">Linkedin: borangobel</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="far fa-envelope"></i>
+                    <p>Email: gobelboran@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+
+
+
+    </main>
+    <hr>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Boran Gobel. All rights reserved.</p>
+            <!-- Add social media icons or links here -->
+        </div>
+    </footer>
+
+</body>
+</html>

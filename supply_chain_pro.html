@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Chain Analysis USA</title>
+    <link rel="stylesheet" href="supply.css">
+</head>
+<body>
+    <header>
+        <div class="container" style="margin-bottom: 10px;">
+            <h1><a href="index.html">Boran Gobel - Portfolio</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li> <!-- Added Home button -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="project-details" style="margin-top: 60px;">
+            <div class="project-image">
+                <img src="SupplyChainAnalysis.png" alt="Supply Chain Analysis USA" onclick="openModal()">
+            </div>
+            <div class="project-info">
+                <h2>Supply Chain Analysis USA</h2>
+                <p>This project focuses on analyzing supply chain data from the AdventureWorks2019 database to gain insights into various aspects of the supply chain process. The analysis includes tasks such as supplier performance evaluation, inventory management analysis, demand forecasting, and procurement analysis.</p>
+                <p>The dataset used for this analysis is sourced from the AdventureWorks2019 database, which provides comprehensive information on purchase orders, vendors, products, and sales transactions.</p>
+                <h3>Tools and Technologies</h3>
+                <ul>
+                    <li>SQL: Used for querying and extracting data from the AdventureWorks2019 database.</li>
+                    <li>Python: Utilized libraries such as pandas for data cleaning and manipulation.</li>
+                    <li>Tableau: Used for data visualization and creating interactive dashboards to present the analysis results.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('myModal').style.display = "block";
+            document.getElementById('img01').src = "SupplyChainAnalysis.png";
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

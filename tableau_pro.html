@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau Project - Data Visualization</title>
+    <link rel="stylesheet" href="tableau.css">
+</head>
+<body>
+    <header>
+        <div class="container" style="margin-bottom: 10px;">
+            <h1><a href="index.html">Boran Gobel - Portfolio</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li> <!-- Added Home button -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="project-details" style="margin-top: 60px;">
+            <div class="project-image">
+                <img src="tableau.png" alt="Project Image" onclick="openModal()">
+            </div>
+            <div class="project-info">
+                <h2>Tableau Project - Data Visualization</h2>
+                <p>Dynamic dashboard for British Airways Reviews, designed to provide comprehensive insights at a glance. This interactive platform allows users to seamlessly explore various metrics including date, continent, traveler type, seat type, and aircraft.</p>
+                <p>The dashboard features a visually engaging map, illustrating average values by country for the selected parameter. Additionally, three insightful charts offer a deeper dive into the data, showcasing average values by month, aircraft, and total reviews. With a concise summary row at the top, users can quickly grasp key findings and trends. It’s a powerful tool for understanding customer feedback and enhancing service delivery.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('myModal').style.display = "block";
+            document.getElementById('img01').src = "tableau.png";
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+    </script>
+</body>
+</html>

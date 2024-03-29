@@ -1,0 +1,175 @@
+/* CSS styles for the header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0;
+  float: left;
+}
+
+nav {
+  margin-top: 20px; /* Add space above the navigation links */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* CSS styles for About Me section */
+.about-content {
+  display: flex;
+  align-items: center;
+}
+
+.about-photo {
+  width: 30%; /* Adjust the width as needed */
+}
+
+.about-photo img {
+  width: 100%; /* Ensure the image fills its container */
+  display: block;
+  border-radius: 5px; /* Apply border radius for a rounded corner */
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+.about-info {
+  width: 70%; /* Adjust the width as needed */
+  padding-left: 20px; /* Add spacing between the photo and the info */
+}
+
+.about-info p {
+  margin: 0; /* Remove default margin */
+  font-size: 26px;
+}
+
+/* CSS styles for project boxes */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-box {
+  width: calc(33.33% - 20px);
+  background-color: #f4f4f4; /* Grey background color */
+  padding: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.project-box img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.project-box h3 {
+  margin-top: 0;
+}
+
+.project-box p {
+  margin-bottom: 0;
+}
+
+.project-box:hover {
+  background-color: #e0e0e0; /* Change background color on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* CSS styles for skills section */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-box {
+  width: calc(25% - 20px);
+  background-color: #f4f4f4; /* Grey background color */
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.skill-box p {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* CSS styles for Contact section */
+.contact-links {
+  display: flex;
+  justify-content: space-around; /* Align links evenly */
+  align-items: center; /* Center vertically */
+}
+
+.contact-item {
+  text-align: center; /* Center text horizontally */
+  padding: 20px; /* Add padding around each contact item */
+  box-sizing: border-box;
+  transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.contact-item:hover {
+  background-color: #f4f4f4; /* Change background color on hover */
+}
+
+.contact-item i {
+  font-size: 24px; /* Adjust icon size */
+  margin-bottom: 5px; /* Add margin below icon */
+}
+
+.contact-links p {
+  margin: 0;
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: #000;
+}
+
+/* Set font size and margin for icons */
+.contact-links i {
+  font-size: 24px;
+  margin-right: 10px; /* Add spacing between icon and text */
+}
