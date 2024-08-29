@@ -67,6 +67,10 @@ nav ul li a:hover {
   align-items: center; /* Center items vertically */
 }
 
+#project-info-li{
+  font-size: 20px;
+}
+
 .project-image {
   flex: 0 0 50%; /* Take up 50% of the width */
   margin-right: 10px; /* Add a right margin */
